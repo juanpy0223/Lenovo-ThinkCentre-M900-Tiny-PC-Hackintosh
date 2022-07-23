@@ -4,7 +4,7 @@
 
  
 
-Tested to clean Install Mojave, Catalina, Big Sur, and Monterey.
+Tested to clean Install Catalina, Big Sur, and Monterey.
 
 Catalina:
 ![00 m900tinycatalina](https://user-images.githubusercontent.com/74636450/180625322-7ae9e0b4-417d-449e-a2ec-f17248c5d5e6.png)
