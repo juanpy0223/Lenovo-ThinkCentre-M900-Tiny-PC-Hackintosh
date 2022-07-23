@@ -16,8 +16,6 @@ Monterey:
 ![01 m900tinymonterey 2](https://user-images.githubusercontent.com/74636450/180625421-6e476b95-a6d4-4b6a-b095-0a5a4e715df6.png)
 
 
-please add your own PLATFORM INFO, with https://github.com/corpnewt/GenSMBIOS... Im using iMac17,1 SMBIOS. 
-
 
 # Guides and sources:
 
@@ -25,6 +23,8 @@ From Windows:
 
 I followed [Dortania's OpenCore Guide](https://dortania.github.io/)
  and did Port Mapping from Windows https://www.reddit.com/r/hackintosh/comments/ta1ef4/guide_easy_usb_mapping_with_usbtoolbox_on_windows/?utm_medium=android_app&utm_source=share 
+
+please add your own PLATFORM INFO, with https://github.com/corpnewt/GenSMBIOS... Im using iMac17,1 SMBIOS. 
 
 After Installing Catalina:
 
