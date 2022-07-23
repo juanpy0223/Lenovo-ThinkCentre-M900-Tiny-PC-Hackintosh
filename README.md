@@ -9,8 +9,11 @@ Tested to clean Install Mojave, Catalina, Big Sur, and Monterey.
 Catalina:
 ![00 m900tinycatalina](https://user-images.githubusercontent.com/74636450/180625322-7ae9e0b4-417d-449e-a2ec-f17248c5d5e6.png)
 
+Big Sur:
+![01 m900tinybigsur2](https://user-images.githubusercontent.com/74636450/180625420-b50c4ef7-e666-4592-85dc-3fc29d6b20ee.png)
+
 Monterey:
-![01 m900tinymonterey](https://user-images.githubusercontent.com/74636450/180625327-f3a676d9-3fd8-475e-be63-80ecc16e2322.png)
+![01 m900tinymonterey 2](https://user-images.githubusercontent.com/74636450/180625421-6e476b95-a6d4-4b6a-b095-0a5a4e715df6.png)
 
 
 please add your own PLATFORM INFO, with https://github.com/corpnewt/GenSMBIOS... Im using iMac17,1 SMBIOS. 
