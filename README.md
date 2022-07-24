@@ -64,8 +64,6 @@ followed this guide https://hackaday.com/2022/03/13/minipc-surgery-makes-it-50-c
 
 - Conexion LAN (IntelMausi.kext)
 
-- SDCard Reader (RealtekCardREader+RealtekCardReaderFriend kexts)
-
 - Audio: Monitor Speakers via DisplayPort and LineOut to Headphones ¨Front Jack¨ (AppleAlc.kext alcid13 + HPET.aml + IRQ and IPIC Conflict patch)
 
 
