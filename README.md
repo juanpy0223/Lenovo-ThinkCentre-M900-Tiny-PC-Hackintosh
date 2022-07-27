@@ -43,9 +43,10 @@ Last I followed [OC Little Translated by 5T33Z0](https://github.com/5T33Z0/OC-Li
 - DRAM: 20GB (16GB+4GB) 2133Mhz DDR4 So-Dimm
 
 - Storage: 1TB Crucial P5 2280 (nvme slot) (MacOS-Catalina, Big Sur and Windows 10 64bit 21H2)... 
+
 I used this guide to install win10 (https://www.youtube.com/watch?v=ztxHRGdX0Sw&t=3s)
 
-- Connections: I219-LM Intel Ethernet - no wifi
+- Connections: I219-LM Intel Ethernet - BCM94360ng 
 
 - 6x (2 Front+4 Rear) USB 3.1 Gen1 (one front AlawysOn)
 
