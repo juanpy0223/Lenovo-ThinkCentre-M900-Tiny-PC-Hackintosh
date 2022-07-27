@@ -4,7 +4,10 @@
 
  
 
-Tested to clean Install Catalina, Big Sur, and Monterey.
+Tested to clean Install Sierra, Catalina, Big Sur, and Monterey.
+
+Sierra:
+![m900tiny sierra 10 12 6](https://user-images.githubusercontent.com/74636450/181305352-69758405-f766-45f1-9ee1-d86e106ebb25.png)
 
 Catalina:
 ![00 m900tinycatalina](https://user-images.githubusercontent.com/74636450/180625322-7ae9e0b4-417d-449e-a2ec-f17248c5d5e6.png)
