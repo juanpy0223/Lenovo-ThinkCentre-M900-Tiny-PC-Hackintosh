@@ -61,13 +61,13 @@ followed this guide https://hackaday.com/2022/03/13/minipc-surgery-makes-it-50-c
 
 - Graphics Full Aceleration, (Plug.aml, Lilu.kext, VirtualSMC.kext, WhateverGreen.kext,SSDT-MEM2.aml)
 
-- A type USB USB Port Map kext - (USB Port Map kext + SSDT-USBX-.aml-for USB power)
+- Type A USB Ports - (USB Port Map kext + SSDT-USBX-.aml-for USB power)
 
-- Power Management (SSDT-PLUG.aml, CPUFriend+CPUFriendDataProvider kexts)
+- Power Management (SSDT-PLUG.aml, EC.aml and CPUFriend+CPUFriendDataProvider kexts)
 
-- Conexion LAN (IntelMausi.kext)
+- Conexion - LAN (IntelMausi.kext) ; Wifi+Bluetooth no kext required, only mapped BT usb port as internal (255)
 
-- Audio: Monitor Speakers via DisplayPort and LineOut to Headphones ¨Front Jack¨ (AppleAlc.kext alcid13 + HPET.aml + IRQ and IPIC Conflict patch)
+- Audio: Monitor Speakers via DisplayPort and LineOut to Headphones ¨Front Jack¨ (AppleAlc.kext+HPET.aml+IRQ and IPIC Conflict patch) - now Also Internal Speaker working with alcid=20
 
 
 # There are other patches for making macOS believe that os running on a real iMac, like DMAC, MCHC, MEM2, PCMR, and so on.
