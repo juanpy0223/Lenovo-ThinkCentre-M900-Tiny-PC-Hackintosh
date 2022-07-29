@@ -74,11 +74,11 @@ followed this guide https://hackaday.com/2022/03/13/minipc-surgery-makes-it-50-c
 # There are other patches for making macOS believe that os running on a real iMac, like DMAC, MCHC, MEM2, PCMR, and so on.
 
 
-# Note: I will dedicate some time to trying to fix sleep issue (display not working after sleep)
+# Note: I will dedicate some time to trying to fix sleep issue (display not working after sleep)...
 
 # Progress: I went deep into Whatevergreen.kext patching, So I figured out how to send sleep command, ONLY TO IGPU, and make the M900 to go into HALF-SLEEP state, to avoid the tiny pc to get stuck on BLANK MODE
-Instead of typing a lot, I will show you My Config on a few pictures... Remember this tiny pc has mobile hardware, so I treated it as a MacMini not a iMac (the LSPCON and hda-gfx= onboard-1 patches, make MacOS believe its a mobile IGPU not a Desktop IGPU
-so, when you go to sleep and later touch and key or move the mouse, basically the system believes you a CLOSING and/or OPENING the "Laptop".
+Instead of typing a lot, I will show you My Config on a few pictures... Remember this tiny pc has mobile hardware, so I treated it as a MacMini not a iMac; the LSPCON and hda-gfx=onboard-1 patches, make MacOS believe its a mobile IGPU not a Desktop IGPU
+so, when you go to sleep and later press a key or move the mouse, basically the system believes you a CLOSING and/or OPENING the "Laptop".
 
 ![00DEVICEPROPERTIES](https://user-images.githubusercontent.com/74636450/181666524-5afc44bc-bddc-411e-a4d5-0bc75f35e26f.png)
 
@@ -88,13 +88,13 @@ so, when you go to sleep and later touch and key or move the mouse, basically th
 
 ![03DORTANIA FIX SLEEP](https://user-images.githubusercontent.com/74636450/181666540-fc3606db-43f1-499d-9d87-05111e72a2b7.png)
 
--- if you check patching methods, the board controller supports 3 ports (2 DP + Dummy which can be HDMI or VGA)... If you change the dummy port definition from Dummy to DP, SLEEP and WAKE happens really fast 2-3 seconds.
-From Dummy "10 00 00 00" to Display Port "00 04 00 00".
+-- if you check whatevergreen patching methods, the board controller (0x1912) supports 3 video output ports (2 DP + 1 Dummy which can be HDMI or VGA depending on adapter)... If you change the dummy port definition from Dummy to DP, SLEEP and WAKE happens really fast 2-3 seconds.
+Exampl: From Dummy "10 00 00 00" to Display Port "00 04 00 00".
 
-This way you avoid getting stuck on BLANK SCREEN and Only Fan and CPU are still running, reducing power consumption.
+# This way you avoid getting stuck on BLANK SCREEN and Only Fan and CPU are still running, reducing power consumption.
+
 
 # This is a WORK IN PROGRESS, please let me know any problem you may have, or any suggestions.
-
 
 
 
