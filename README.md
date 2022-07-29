@@ -38,6 +38,8 @@ Last I followed [OC Little Translated by 5T33Z0](https://github.com/5T33Z0/OC-Li
 
 - Model Make: Lenovo Thinkcentre M900 Tiny PC
 
+- Bios Version: FWKTBFA
+
 - CPU/GPU: Intel i7-6700t/Intel HD Graphics 530 (2 DisplayPort + 1 VGA port) only 2 display ports work on macOS.
 
 - DRAM: 20GB (16GB+4GB) 2133Mhz DDR4 So-Dimm
