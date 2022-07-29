@@ -75,15 +75,23 @@ followed this guide https://hackaday.com/2022/03/13/minipc-surgery-makes-it-50-c
 
 
 # Note: I will dedicate some time to trying to fix sleep issue (display not working after sleep)
+
 # Progress: I went deep into Whatevergreen.kext patching, So I figured out how to send sleep command, ONLY TO IGPU, and make the M900 to go into HALF-SLEEP state, to avoid the tiny pc to get stuck on BLANK MODE
-Instead of ryping a lot, I will show you My Config on a few pictures
+Instead of typing a lot, I will show you My Config on a few pictures... Remember this tiny pc has mobile hardware, so I treated it as a MacMini not a iMac (the LSPCON patch, makes MacOS believe its a mobile IGPU not a Desktop IGPU
+so, when you go to sleep and later touch and key or move the mouse, basically the system believes you a CLOSING and OPENING the Laptop.
 
 ![00 DEVICEPROPERTIES](https://user-images.githubusercontent.com/74636450/181666524-5afc44bc-bddc-411e-a4d5-0bc75f35e26f.png)
+
 ![01 KEXTS](https://user-images.githubusercontent.com/74636450/181666527-f5951e4d-2df3-4f53-8ca1-bee4b3d78b51.png)
+
 ![02 BOOT-ARGS](https://user-images.githubusercontent.com/74636450/181666534-a63a1115-1834-4aad-8e52-6f5334ed3e81.png)
+
 ![03 DORTANIA FIX SLEEP](https://user-images.githubusercontent.com/74636450/181666540-fc3606db-43f1-499d-9d87-05111e72a2b7.png)
 
+-- if you check patching methods, the board controller supports 3 ports (2 DP + Dummy which can be HDMI or VGA)... If you change the dummy port definition from Dummy to DP, SLEEP and WAKE happens really fast 2-3 seconds.
+From Dummy "10 00 00 00" to Display Port "00 04 00 00".
 
+This way you avoid getting stuck on BLANK SCREEN and Only Fan and CPU are still running, reducing power consumption.
 
 # This is a WORK IN PROGRESS, please let me know any problem you may have, or any suggestions.
 
