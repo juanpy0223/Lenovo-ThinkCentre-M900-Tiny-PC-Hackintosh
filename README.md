@@ -80,13 +80,13 @@ followed this guide https://hackaday.com/2022/03/13/minipc-surgery-makes-it-50-c
 Instead of typing a lot, I will show you My Config on a few pictures... Remember this tiny pc has mobile hardware, so I treated it as a MacMini not a iMac (the LSPCON and hda-gfx= onboard-1 patches, make MacOS believe its a mobile IGPU not a Desktop IGPU
 so, when you go to sleep and later touch and key or move the mouse, basically the system believes you a CLOSING and/or OPENING the "Laptop".
 
-![00 DEVICEPROPERTIES](https://user-images.githubusercontent.com/74636450/181666524-5afc44bc-bddc-411e-a4d5-0bc75f35e26f.png)
+![00DEVICEPROPERTIES](https://user-images.githubusercontent.com/74636450/181666524-5afc44bc-bddc-411e-a4d5-0bc75f35e26f.png)
 
-![01 KEXTS](https://user-images.githubusercontent.com/74636450/181666527-f5951e4d-2df3-4f53-8ca1-bee4b3d78b51.png)
+![01KEXTS](https://user-images.githubusercontent.com/74636450/181666527-f5951e4d-2df3-4f53-8ca1-bee4b3d78b51.png)
 
-![02 BOOT-ARGS](https://user-images.githubusercontent.com/74636450/181666534-a63a1115-1834-4aad-8e52-6f5334ed3e81.png)
+![02BOOT-ARGS](https://user-images.githubusercontent.com/74636450/181666534-a63a1115-1834-4aad-8e52-6f5334ed3e81.png)
 
-![03 DORTANIA FIX SLEEP](https://user-images.githubusercontent.com/74636450/181666540-fc3606db-43f1-499d-9d87-05111e72a2b7.png)
+![03DORTANIA FIX SLEEP](https://user-images.githubusercontent.com/74636450/181666540-fc3606db-43f1-499d-9d87-05111e72a2b7.png)
 
 -- if you check patching methods, the board controller supports 3 ports (2 DP + Dummy which can be HDMI or VGA)... If you change the dummy port definition from Dummy to DP, SLEEP and WAKE happens really fast 2-3 seconds.
 From Dummy "10 00 00 00" to Display Port "00 04 00 00".
