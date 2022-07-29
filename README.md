@@ -22,16 +22,18 @@ Monterey:
 
 # Guides and sources:
 
-From Windows:
+- Please add your own PLATFORM INFO, with https://github.com/corpnewt/GenSMBIOS... Im using iMac17,1 SMBIOS. 
+
+# From Windows:
 
 I followed [Dortania's OpenCore Guide](https://dortania.github.io/)
  and did Port Mapping from Windows https://www.reddit.com/r/hackintosh/comments/ta1ef4/guide_easy_usb_mapping_with_usbtoolbox_on_windows/?utm_medium=android_app&utm_source=share 
 
-please add your own PLATFORM INFO, with https://github.com/corpnewt/GenSMBIOS... Im using iMac17,1 SMBIOS. 
+# After Installing Catalina: (for Catalina and olver versions, Port Mapping is not a must), so its perfect, for doing post-install process...
 
-After Installing Catalina:
+- Followed Dortania Post-Install - https://dortania.github.io/OpenCore-Post-Install/
 
-Last I followed [OC Little Translated by 5T33Z0](https://github.com/5T33Z0/OC-Little-Translated)
+- Last I followed [OC Little Translated by 5T33Z0](https://github.com/5T33Z0/OC-Little-Translated)
 
 
 # My Specs:
@@ -55,8 +57,9 @@ I used this guide to install win10 (https://www.youtube.com/watch?v=ztxHRGdX0Sw&
 - I replaced the original heatsink and fan cooler with the ID-Cooling SE-214-xt (now idle temp is 30c and full load 50c)... 
 followed this guide https://hackaday.com/2022/03/13/minipc-surgery-makes-it-50-cooler/ 
 
-![IMG_20220723_184451](https://user-images.githubusercontent.com/74636450/180625287-2f2fdefe-3229-4fc6-9710-48e455dea7ed.jpg)
-![IMG_20220722_214346](https://user-images.githubusercontent.com/74636450/180625300-567f6312-f886-42ba-a08c-b04dd04a3306.jpg)
+![IMG_20220729_124101](https://user-images.githubusercontent.com/74636450/181805961-205c3e1d-2103-4231-8079-558d8e1e3f89.jpg)
+
+![IMG_20220729_124110](https://user-images.githubusercontent.com/74636450/181806073-6989820d-7fc6-4a4d-b015-cceb123fac7a.jpg)
 
 
 # What works on MacOS:
