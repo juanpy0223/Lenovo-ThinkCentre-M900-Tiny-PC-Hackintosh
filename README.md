@@ -75,6 +75,14 @@ followed this guide https://hackaday.com/2022/03/13/minipc-surgery-makes-it-50-c
 
 
 # Note: I will dedicate some time to trying to fix sleep issue (display not working after sleep)
+# Progress: I went deep into Whatevergreen.kext patching, So I figured out how to send sleep command, ONLY TO IGPU, and make the M900 to go into HALF-SLEEP state, to avoid the tiny pc to get stuck on BLANK MODE
+Instead of ryping a lot, I will show you My Config on a few pictures
+
+![00 DEVICEPROPERTIES](https://user-images.githubusercontent.com/74636450/181666524-5afc44bc-bddc-411e-a4d5-0bc75f35e26f.png)
+![01 KEXTS](https://user-images.githubusercontent.com/74636450/181666527-f5951e4d-2df3-4f53-8ca1-bee4b3d78b51.png)
+![02 BOOT-ARGS](https://user-images.githubusercontent.com/74636450/181666534-a63a1115-1834-4aad-8e52-6f5334ed3e81.png)
+![03 DORTANIA FIX SLEEP](https://user-images.githubusercontent.com/74636450/181666540-fc3606db-43f1-499d-9d87-05111e72a2b7.png)
+
 
 
 # This is a WORK IN PROGRESS, please let me know any problem you may have, or any suggestions.
