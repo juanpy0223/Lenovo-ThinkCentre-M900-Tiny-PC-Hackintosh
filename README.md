@@ -98,7 +98,9 @@ Exampl: From Dummy "10 00 00 00" to Display Port "00 04 00 00".
 
 # This way you avoid getting stuck on BLANK SCREEN and Only Fan and CPU are still running, reducing power consumption.
 
-Lenovo ThinkCentre M900 Tiny Pc CFG lock (MSR) fix:
+
+
+# Lenovo ThinkCentre M900 Tiny Pc CFG lock (MSR) fix:
 
 All the following models with BIOS Update - Intel B150 for ThinkCentre M700 Tiny, ThinkCentre M800, M900, M900x Tiny
 
