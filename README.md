@@ -98,6 +98,32 @@ Exampl: From Dummy "10 00 00 00" to Display Port "00 04 00 00".
 
 # This way you avoid getting stuck on BLANK SCREEN and Only Fan and CPU are still running, reducing power consumption.
 
+Lenovo ThinkCentre M900 Tiny Pc CFG lock (MSR) fix:
+
+All the following models with BIOS Update - Intel B150 for ThinkCentre M700 Tiny, ThinkCentre M800, M900, M900x Tiny
+
+Bios Version: FWKTBFA (fwjtbfusa) - 05 Jul 2022
+
+This guide will work, only if your Lenovo ThinkCentre tiny pc has this bios version, if not, you will have to update. (It is included on Windows 10 updates), or you can download it from official site.
+https://support.lenovo.com/pt/en/downloads/DS105487
+
+# Method: 
+- I followed Dortania Post-Install Guide on the topic, with a little variation...
+
+https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html#what-is-cfg-lock
+
+The guide helped me find the CFG Lock value for my bios, but no matter how much I searched, I could not find CpuSetup value anywhere, so I knew the Modified GRUB Shell commands, had to be different.
+
+- I first tried the suggested: setup_var_cv CpuSetup 0x197 0x01 0x00, with no luck.
+
+- I tried this: setup_var 0x197 0x00, and it worked. (0x197 is the value for this bios version)
+"CFG lock, VarStoreInfo (VarOffset/VarName): 0x197, VarStore: 0x1, QuestionId: 0x87D , Size: 1, Min: 0x0, Max 0x1, Step: 0x0"
+
+- You have to disable Kernel -> Quirks -> AppleCpuPmCfgLock and Kernel -> Quirks -> AppleXcpmCfgLock, on your Config.plist
+
+Now the system has full access to your CPU MSR, to controll it and perform better.
+
+
 
 # This is a WORK IN PROGRESS, please let me know any problem you may have, or any suggestions.
 
