@@ -100,7 +100,7 @@ Exampl: From Dummy "10 00 00 00" to Display Port "00 04 00 00".
 
 
 
-# Lenovo ThinkCentre M900 Tiny Pc CFG lock (MSR) fix:
+# Lenovo ThinkCentre M900 Tiny Pc CFG lock (MSR 0xE2) fix:
 
 All the following models with BIOS Update - Intel B150 for ThinkCentre M700 Tiny, ThinkCentre M800, M900, M900x Tiny
 
@@ -123,7 +123,7 @@ The guide helped me find the CFG Lock value for my bios, but no matter how much 
 
 - You have to disable Kernel -> Quirks -> AppleCpuPmCfgLock and Kernel -> Quirks -> AppleXcpmCfgLock, on your Config.plist
 
-Now the system has full access to your CPU MSR, to controll it and perform better.
+Now the system has full access to your CPU MSR 0xe2, to controll it and perform better.
 
 
 
