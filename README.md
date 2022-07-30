@@ -133,7 +133,7 @@ The guide helped me find the CFG Lock value for my bios, but no matter how much 
 
 ![04 UNLOCKED MSR](https://user-images.githubusercontent.com/74636450/181919855-c09ed69f-4f37-416e-9470-51553b4bbf2c.jpg)
 
-Now the system has full access to your CPU MSR 0xe2, to controll it and perform better.
+# Now the system has full access to your CPU MSR 0xe2, to controll it and perform better.
 
 
 
