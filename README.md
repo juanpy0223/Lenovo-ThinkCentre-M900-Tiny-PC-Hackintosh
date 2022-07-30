@@ -50,7 +50,7 @@ I followed [Dortania's OpenCore Guide](https://dortania.github.io/)
 
 I used this guide to install win10 (https://www.youtube.com/watch?v=ztxHRGdX0Sw&t=3s)
 
-- Connections: I219-LM Intel Ethernet - BCM94360ng 
+- Connections: I219-LM Intel Ethernet - Wifi BCM94360ng Fenvi
 
 - 6x (2 Front+4 Rear) USB 3.1 Gen1 (one front AlawysOn)
 
