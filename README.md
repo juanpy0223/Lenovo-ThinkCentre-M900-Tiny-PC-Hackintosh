@@ -123,6 +123,16 @@ The guide helped me find the CFG Lock value for my bios, but no matter how much 
 
 - You have to disable Kernel -> Quirks -> AppleCpuPmCfgLock and Kernel -> Quirks -> AppleXcpmCfgLock, on your Config.plist
 
+# Sample Pics:
+
+![01 LOCKED MSR](https://user-images.githubusercontent.com/74636450/181919843-550de539-ea05-421d-93fd-41f3fc616d80.jpg)
+
+![02 SAMPLE](https://user-images.githubusercontent.com/74636450/181919847-626f395c-5baa-4dfb-a868-db5da40220ac.jpg)
+
+![03 SAMPLE](https://user-images.githubusercontent.com/74636450/181919851-cad9e5fb-0118-42be-a838-0b4eb42b4618.jpg)
+
+![04 UNLOCKED MSR](https://user-images.githubusercontent.com/74636450/181919855-c09ed69f-4f37-416e-9470-51553b4bbf2c.jpg)
+
 Now the system has full access to your CPU MSR 0xe2, to controll it and perform better.
 
 
