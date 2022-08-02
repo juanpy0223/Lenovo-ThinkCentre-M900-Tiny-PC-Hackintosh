@@ -116,6 +116,8 @@ https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html#what-is-cfg-
 
 The guide helped me find the CFG Lock value for my bios, but no matter how much I searched, I could not find CpuSetup value anywhere, so I knew the Modified GRUB Shell commands, had to be different.
 
+![varstore](https://user-images.githubusercontent.com/74636450/182439135-e76b6ab1-de6b-4ec8-a996-6a84fb60e66d.png)
+
 - I first tried the suggested: setup_var_cv CpuSetup 0x197 0x01 0x00, with no luck.
 
 - I tried this: setup_var 0x197 0x00, and it worked. (0x197 is the value for this bios version)
