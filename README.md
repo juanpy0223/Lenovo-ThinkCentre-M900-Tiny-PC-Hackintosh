@@ -83,7 +83,7 @@ followed this guide https://hackaday.com/2022/03/13/minipc-surgery-makes-it-50-c
 
 # Progress: I went deep into Whatevergreen.kext patching, So I figured out how to send sleep command, ONLY TO IGPU, and make the M900 to go into HALF-SLEEP state, to avoid the tiny pc to get stuck on BLANK MODE
 Instead of typing a lot, I will show you My Config on a few pictures... Remember this tiny pc has mobile hardware, so I treated it as a MacMini not a iMac; the LSPCON and hda-gfx=onboard-1 patches, make MacOS believe its a mobile IGPU not a Desktop IGPU 
-so, when you go to sleep and later press a key or move the mouse, basically the system believes you a CLOSING and/or OPENING the "Laptop". - (you have to remove or uncomment both patches "#", to boot Monterey an up)
+so, when you go to sleep and later press a key or move the mouse, basically the system believes you a CLOSING and/or OPENING the "Laptop". - (you have to remove or uncomment both patches "#", to boot Monterey and up) Edit: I tried it without the 2 patches and it works, so they are not really necessary, the PM SET commands are enough!!
 
 ![00DEVICEPROPERTIES](https://user-images.githubusercontent.com/74636450/181666524-5afc44bc-bddc-411e-a4d5-0bc75f35e26f.png)
 
@@ -133,7 +133,7 @@ The guide helped me find the CFG Lock value for my bios, but no matter how much 
 
 ![04 UNLOCKED MSR](https://user-images.githubusercontent.com/74636450/181919855-c09ed69f-4f37-416e-9470-51553b4bbf2c.jpg)
 
-# Now the system has full access to your CPU MSR 0xe2, to controll it and perform better.
+# Now the system has full access to your CPU MSR 0xe2, to control it and perform better.
 
 
 
