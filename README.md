@@ -29,7 +29,7 @@ Monterey:
 I followed [Dortania's OpenCore Guide](https://dortania.github.io/)
  and did Port Mapping from Windows https://www.reddit.com/r/hackintosh/comments/ta1ef4/guide_easy_usb_mapping_with_usbtoolbox_on_windows/?utm_medium=android_app&utm_source=share 
 
-# After Installing Catalina: (for Catalina and olver versions, Port Mapping is not a must), so its perfect, for doing post-install process...
+# After Installing Catalina: (for Catalina and older versions, Port Mapping is not a must), so its perfect, for doing post-install process...
 
 - Followed Dortania Post-Install - https://dortania.github.io/OpenCore-Post-Install/
 
