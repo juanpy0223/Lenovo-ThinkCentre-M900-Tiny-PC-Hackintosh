@@ -1,6 +1,6 @@
 # Lenovo-ThinkCentre-M900-Tiny-PC-Hackintosh
 
-# Lenovo Thinkcentre M900 Tiny PC OpenCore 0.7.8
+# Lenovo Thinkcentre M900 Tiny PC OpenCore 0.8.3
 
  
 
@@ -65,13 +65,13 @@ followed this guide https://hackaday.com/2022/03/13/minipc-surgery-makes-it-50-c
 # What works on MacOS:
 
 
-- Graphics Full Aceleration, (Plug.aml, Lilu.kext, VirtualSMC.kext, WhateverGreen.kext,SSDT-MEM2.aml)
+- Graphics Full Aceleration, (Lilu.kext, VirtualSMC.kext, WhateverGreen.kext). (my Processor and GPU are natively supported, so I dont need any config on DeviceProperties).
 
 - Type A USB Ports - (USB Port Map kext + SSDT-USBX-.aml-for USB power)
 
-- Power Management (SSDT-PLUG.aml, EC.aml and CPUFriend+CPUFriendDataProvider kexts)
+- Power Management (SSDT-PLUG.aml, EC.aml,SSDT-MEM2.aml and CPUFriend+CPUFriendDataProvider kexts)
 
-- Conexion - LAN (IntelMausi.kext) ; Wifi+Bluetooth no kext required, only mapped BT usb port as internal (255)
+- Internet Conexion - LAN (IntelMausi.kext) ; Wifi+Bluetooth no kext required, only mapped BT usb port as internal (255)
 
 - Audio: Monitor Speakers via DisplayPort and LineOut to Headphones ¨Front Jack¨ (AppleAlc.kext+HPET.aml+IRQ and IPIC Conflict patch) - now Also Internal Speaker working with alcid=20
 
@@ -104,7 +104,7 @@ Exampl: From Dummy "10 00 00 00" to Display Port "00 04 00 00".
 
 All the following models with BIOS Update - Intel B150 for ThinkCentre M700 Tiny, ThinkCentre M800, M900, M900x Tiny
 
-Bios Version: FWKTBFA (fwjtbfusa) - 05 Jul 2022
+Bios Version: FWKTBFA (fwjtbfusa) - 05 Jul 2022 - with this BIOS update, you can use a 7th Gen CPU (i5-7500t or i7-7700t).
 
 This guide will work, only if your Lenovo ThinkCentre tiny pc has this bios version, if not, you will have to update. (It is included on Windows 10 updates), or you can download it from official site.
 https://support.lenovo.com/pt/en/downloads/DS105487
@@ -127,13 +127,13 @@ The guide helped me find the CFG Lock value for my bios, but no matter how much 
 
 # Sample Pics:
 
-![01 LOCKED MSR](https://user-images.githubusercontent.com/74636450/181919843-550de539-ea05-421d-93fd-41f3fc616d80.jpg)
+![01LOCKED MSR](https://user-images.githubusercontent.com/74636450/181919843-550de539-ea05-421d-93fd-41f3fc616d80.jpg)
 
-![02 SAMPLE](https://user-images.githubusercontent.com/74636450/181919847-626f395c-5baa-4dfb-a868-db5da40220ac.jpg)
+![02SAMPLE](https://user-images.githubusercontent.com/74636450/181919847-626f395c-5baa-4dfb-a868-db5da40220ac.jpg)
 
-![03 SAMPLE](https://user-images.githubusercontent.com/74636450/181919851-cad9e5fb-0118-42be-a838-0b4eb42b4618.jpg)
+![03SAMPLE](https://user-images.githubusercontent.com/74636450/181919851-cad9e5fb-0118-42be-a838-0b4eb42b4618.jpg)
 
-![04 UNLOCKED MSR](https://user-images.githubusercontent.com/74636450/181919855-c09ed69f-4f37-416e-9470-51553b4bbf2c.jpg)
+![04UNLOCKED MSR](https://user-images.githubusercontent.com/74636450/181919855-c09ed69f-4f37-416e-9470-51553b4bbf2c.jpg)
 
 # Now the system has full access to your CPU MSR 0xe2, to control it and perform better.
 
