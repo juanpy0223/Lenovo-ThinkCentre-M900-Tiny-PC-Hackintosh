@@ -143,6 +143,6 @@ The guide helped me find the CFG Lock value for my bios, but no matter how much 
 
 # This is a WORK IN PROGRESS, please let me know any problem you may have, or any suggestions.
 
-#edit: if you want to use Dual Monitor, change SMBIOS to MacMini8,1, and generate new serial numbers... thanks to u/Alternative-Record-4 (infor the info!!!
+# Edit: if you want to use Dual Monitor, change SMBIOS to MacMini8,1, and generate new serial numbers... thanks to u/Alternative-Record-4 (infor the info!!!
 
 I hope this information helps.... if you have the same model...
